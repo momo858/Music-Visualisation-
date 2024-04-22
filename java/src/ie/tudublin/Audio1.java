@@ -142,6 +142,8 @@ public class Audio1 extends PApplet
             stroke(c, 255, 255);
             circle(cx, cy, r);
             }
+            break;
+
         case 4:
         {
             background(0);
@@ -153,7 +155,7 @@ public class Audio1 extends PApplet
                 stroke(cc, 255, 255);
                 float f = lerpedBuffer[i] * halfH * 4.0f;
                 line(i, halfH + f, i, halfH - f);
-                fill(cc);
+                //fill(cc);
                 circle(i, halfH + f, 5);                    
                 circle(i, halfH - f, 5);                    
             }
